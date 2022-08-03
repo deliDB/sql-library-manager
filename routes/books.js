@@ -84,16 +84,4 @@ router.post('/:id/delete', asyncHandler(async (req, res) => {
   }
 }));
 
-
-
-
-/**
- * 
-get /books/new - Shows the create new book form
-post /books/new - Posts a new book to the database
-get /books/:id - Shows book detail form
-post /books/:id - Updates book info in the database
-post /books/:id/delete - Deletes a book. Careful, this can’t be undone. It can be helpful to create a new “test” book to test deleting
- */
-
 module.exports = router;
