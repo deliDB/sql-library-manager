@@ -1,0 +1,5 @@
+extends layout.pug 
+
+block content 
+    h1= `Server Error: ${err.status}`
+    p= err.message 
