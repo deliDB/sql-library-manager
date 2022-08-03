@@ -35,8 +35,6 @@ app.use('/books', books);
 
 // catch 404 and forward to error handler
 app.use( (req, res, next) => {
-  //console.log('Handling 404 error');
-
   const err = new Error('err');
   err.status = 404;
   err.message = "Oops! Page not found. Looks like this page doesn't exist.";
